@@ -1,9 +1,4 @@
 a=int(input())
-b=[2]
-for n in range(0,a):
-    b=list(map(int,input().split()))
-    d=0
-    e=0
-    for i in range(0,2):
-        d+=b[i]
-    print(d)
+for i in range(0,a):
+    b,c=map(int,input().split())
+    print(b+c)
