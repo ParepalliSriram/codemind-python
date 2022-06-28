@@ -1,12 +1,12 @@
 a=int(input())
-tot=0
-pro=1
-while a>0:
+c=0
+p=1
+while a:
     b=a%10
     a=a//10
-    tot=tot+b
-    pro=pro*b
-if tot==pro:
-    print('Spy Number')
+    c+=b
+    p=p*b
+if c==p:
+    print("Spy Number")
 else:
-    print('Not Spy Number')
+    print("Not Spy Number")
