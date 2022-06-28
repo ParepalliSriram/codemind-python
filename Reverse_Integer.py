@@ -1,13 +1,13 @@
 a=int(input())
-d=a
+b=a
 c=0
 if a<0:
     a=a*(-1)
-while a!=0:
-    b=a%10
+while a:
+    d=a%10
     a=a//10
-    c=c*10+b
-if d>0:
-    print(c)
+    c=c*10+d
+if b<0:
+    print(c*(-1))
 else:
-    print(c*-1)
+    print(c)
