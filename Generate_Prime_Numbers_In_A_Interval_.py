@@ -4,10 +4,12 @@ def prime(a):
         if a%i==0:
             c+=1
     if c==2:
-        print(a)
+        return 1
     else:
         return 0
 a=int(input())
 b=int(input())
-for j in range(a,b+1):
-    prime(j)
+for i in range(a,b+1):
+    if prime(i):
+        print(i)
+        
