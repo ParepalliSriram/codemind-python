@@ -1,17 +1,18 @@
 a,b=map(int,input().split())
-b=[a]
-c=[b]
-b=list(map(int,input().split()))
+c=[a]
 c=list(map(int,input().split()))
-s=set(b)
-b=list(s)
-d=0
-e=0
-for i in b:
-    for j in c:
-        if i==j:
-            d+=1
-    if d>0:
-        e+=1
-    d=0
-print(e)
+d=[b]
+d=list(map(int,input().split()))
+e=[]
+f=[]
+count=0
+for i in c:
+    if i not in e:
+        e.append(i)
+for i in d:
+    if i not in f:
+        f.append(i)
+for i in e:
+    if i in f:
+        count+=1
+print(count)
