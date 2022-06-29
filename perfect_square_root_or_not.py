@@ -1,11 +1,8 @@
-a=int(input())
 import math
+a=int(input())
 b=math.sqrt(a)
-c=0
-for i in range(1,a):
-    if i*i==a:
-        c=i
-if c==b:
-    print('True')
+c=round(b)
+if c*c==a:
+    print(True)
 else:
-    print('False')
+    print(False)
