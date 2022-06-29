@@ -1,20 +1,15 @@
-a=str(input())
+a=input()
 a=a.lower()
-c=0
 s=''
+c=0
 for i in a:
-    
     for j in a:
-        if i==' ':
-            break
-        elif i==j:
+        if i==j:
             c+=1
     if c==1:
-        s+=str(i)
+        if i!=' ':
+            s+=i
     c=0
 s=sorted(s)
 for i in s:
-    if i=='{' or i=='}':
-        continue
-    else:
-        print(i,end='')
+    print(i,end='')
