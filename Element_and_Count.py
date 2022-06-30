@@ -2,12 +2,13 @@ a=int(input())
 b=[a]
 b=list(map(int,input().split()))
 c=0
-s=''
+d=[]
 for i in b:
-    if str(i) not in s:
+    if i not in d:
+        d.append(i)
         for j in b:
             if i==j:
-                s+=str(i)
                 c+=1
         print(i,c,end=' ')
-    c=0
+        c=0
+        
