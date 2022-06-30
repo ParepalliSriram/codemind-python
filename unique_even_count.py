@@ -1,14 +1,9 @@
 a=int(input())
 b=[a]
 b=list(map(int,input().split()))
-c=0
-d=0
-for i in range(0,a):
-    for j in range(i,a):
-        if b[i]==b[j]:
-            c+=1
-    if c==1:
-        if b[i]%2==0:
-            d+=1
-    c=0
-print(d)
+c=set(b)
+ans=0
+for i in c:
+    if i%2==0:
+        ans+=1
+print(ans)
