@@ -1,18 +1,18 @@
-def pal(a):
-    c=0
+def leng(a):
+    d=1
     if a==0:
-        c=1
-    else:
-        while(a!=0):
-            b=a%10
-            a=a//10
-            c+=1
+        return d
+    if a<0:
+        a=a*(-1)
+    c=0
+    while a:
+        b=a%10
+        a=a//10
+        c+=1
     return c
 a=int(input())
-b=[a]
-b=list(map(int,input().split()))
-d=0
-for i in range(0,a):
-    if b[i]<0:
-        b[i]=b[i]*(-1)
-    print(pal(b[i]),end=' ')
+c=list(map(int,input().split()))
+cou=0
+m=max(c)
+for i in c:
+    print(leng(i),end=' ')
