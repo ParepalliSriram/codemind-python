@@ -1,24 +1,18 @@
 a=int(input())
-b=0
-c=1
-m=[]
-m.append(b)
-m.append(c)
-for i in range(2,50):
-    ans=b+c
-    m.append(ans)
-    b=c
-    c=ans
-for i in range(0,50):
-    if m[i]>=a:
-        d=m[i]
+b=[]
+b.append(0)
+b.append(1)
+for i in range(2,31):
+    b.append(b[i-1]+b[i-2])
+for i in b:
+    if i>a:
+        g=i
         break
-for i in range(0,50):
-    if m[i]<=a:
-        s=m[i]
-if abs(a-d)<abs(a-s):
-    print(d)
-elif abs(a-d)==abs(a-s):
-    print(s,d)
+    else:
+        m=i
+if abs(a-g)==abs(a-m):
+    print(m,g)
+elif abs(a-g)>abs(a-m):
+    print(m)
 else:
-    print(s)
+    print(g)
