@@ -1,15 +1,13 @@
-a=input()
+a=str(input())
 a=a.lower()
-s=''
-c=0
+b=[]
 for i in a:
-    for j in a:
-        if i==j:
-            c+=1
-    if c==1:
-        if i!=' ':
-            s+=i
-    c=0
-s=sorted(s)
-for i in s:
+    if i==' ':
+        continue
+    else:
+        b.append(i)
+s=set(b)
+b=list(s)
+b.sort()
+for i in b:
     print(i,end='')
