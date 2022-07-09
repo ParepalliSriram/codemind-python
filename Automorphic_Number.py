@@ -1,26 +1,26 @@
 a=int(input())
-j=a
-b=a*a
+b=a
 c=0
+while a:
+   d=a%10
+   a=a//10
+   c+=1
+e=b*b
 f=0
-g=0
-i=0
-while a!=0:
-    d=a%10
-    a=a//10
-    c+=1
-while b!=0:
-    e=b%10
-    b=b//10
+h=0
+while e:
     f+=1
-    g=g*10+e
+    g=e%10
+    e=e//10
+    h=h*10+g
     if f==c:
         break
-while g!=0:
-    h=g%10
-    g=g//10
-    i=i*10+h
-if i==j:
+i=0
+while h:
+    j=h%10
+    h=h//10
+    i=i*10+j
+if i==b:
     print("Automorphic Number")
 else:
     print("Not an Automorphic Number")
