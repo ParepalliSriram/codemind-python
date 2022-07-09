@@ -1,15 +1,17 @@
 a=str(input())
 a=a.lower()
-c=0
-s=0
+b=[]
 for i in a:
-    
-    for j in a:
-        if i==' ':
-            break
-        elif i==j:
-            c+=1
-    if c==1:
-        s+=1
-    c=0
-print(s)
+    if i==' ':
+        continue
+    else:
+        b.append(i)
+s=[]
+for i in b:
+    co=0
+    for j in b:
+        if i==j:
+            co+=1
+    if co==1:
+        s.append(i)
+print(len(s))
