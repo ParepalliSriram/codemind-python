@@ -1,17 +1,13 @@
 a=int(input())
-c=0
-d=0
-m=0
-while a!=0:
-    b=a%10
+b=[]
+while a:
+    c=a%10
     a=a//10
-    m=m*10+b
-while m!=0:
-    e=m%10
-    m=m//10
-    if d==0:
-        if e==6:
-            e=9
-            d+=1
-    c=c*10+e
-print(c)
+    b.append(c)
+b=b[::-1]
+for i in range(0,len(b)):
+    if b[i]==6:
+        b[i]=9
+        break
+for i in b:
+    print(i,end='')
