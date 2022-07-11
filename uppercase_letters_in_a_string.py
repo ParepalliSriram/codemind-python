@@ -1,6 +1,6 @@
-a=str(input())
+a=input()
 c=0
-for element in a:
-    if element>=chr(65) and element<=chr(90):
+for i in a:
+    if i.isupper():
         c+=1
 print(c)
