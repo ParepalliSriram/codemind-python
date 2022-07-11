@@ -1,7 +1,9 @@
-a=str(input())
+a=input()
+b='abcdefghijklmnopqrstuvwxyz'
 a=a.lower()
-s=set(a)
-if len(s)==26 or len(s)==27:
-    print(True)
+for i in b:
+    if a.count(i)==0:
+        print(False)
+        break
 else:
-    print(False)
+    print(True)
