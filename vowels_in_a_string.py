@@ -1,11 +1,9 @@
-a=str(input())
-b=str(input())
-c=0
-for i in a:
-    c+=1
-    if i==b:
+a=input()
+b=input()
+for i in range(0,len(a)):
+    if a[i]==b:
         print(True)
-        print(c-1)
+        print(i)
         break
 else:
     print(False)
