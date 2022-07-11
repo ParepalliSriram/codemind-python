@@ -1,16 +1,14 @@
-a=str(input())
-l=len(a)
-s=''
-c=0
-for i in a[::-1]:
-    c+=1
-    if i!=' ':
-        s+=str(i)
-    if i==' ' or c==l:
-        break
-ma=min(s)
-mi=chr(ord(ma)+32)
-if mi in s:
-    print(mi)
+a=input()
+b=a.split()
+for i in range(len(b)-1,-1,-1):
+    m=min(b[i])
+    break
+if m.isupper():
+    j=m
+    l=m.lower()
+    if l in a:
+        print(l)
+    else:
+        print(j)
 else:
-    print(ma)
+    print(m)
