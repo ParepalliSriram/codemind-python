@@ -1,20 +1,8 @@
-a=str(input())
-s=''
-l=len(a)
-c=0
-for i in a:
-    c+=1
-    if i!=' ':
-        s+=str(i)
-    if i==' ' or c==l:
-        print(min(s),end=' ')
-        s=''
-        c=0
-        break
-for i in a[::-1]:
-    c+=1
-    if i!=' ':
-        s+=str(i)
-    if i==' ' or c==l:
-        print(max(s),end=' ')
-        break
+a=input()
+b=a.split()
+for i in range(0,len(b)):
+    print(min(b[i]),end=' ')
+    break
+for i in range(len(b)-1,-1,-1):
+    print(max(b[i]))
+    break
