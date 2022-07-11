@@ -1,13 +1,10 @@
-a=str(input())
-s=''
-ma=0
-mi=0
+a=input()
+m=max(a)
+j=''
 for i in a:
     if i!=' ':
-        s+=str(i)
-for i in a:
-    if i==min(s):
-        ma+=1
-    if i==max(s):
-        mi+=1
-print(min(s),ma,max(s),mi,end=' ')
+        j+=i
+mm=min(j)
+c=a.count(m)
+d=a.count(mm)
+print(mm,d,m,c)
