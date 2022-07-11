@@ -1,8 +1,6 @@
-a=str(input())
+a=input()
 c=0
-for element in a:
-    if element==' ':
-        continue
-    else:
+for i in a:
+    if i!=' ':
         c+=1
 print(c)
