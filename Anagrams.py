@@ -1,14 +1,10 @@
-a=str(input())
-b=str(input())
-l=len(a)
-c=0
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
 for i in a:
-    for j in a:
-        if i in b:
-            c+=1
-    if c<1:
+    if a.count(i)!=b.count(i):
         print(False)
         break
 else:
     print(True)
-        
