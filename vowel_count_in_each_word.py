@@ -1,9 +1,10 @@
-a=str(input())
+a=input()
+b=a.split()
+d=[]
 c=0
-for element in a:
-    if element=='a' or element=='e' or element=='i' or element=='o' or element=='u':
-        c+=1
-    if element==' ':
-        print(c,end=' ')
-        c=0
-print(c)
+for i in b:
+    for j in i:
+        if j in 'aeiouAEIOU':
+            c+=1
+    print(c,end=' ')
+    c=0
