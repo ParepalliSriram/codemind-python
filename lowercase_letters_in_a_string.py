@@ -1,6 +1,6 @@
-a=str(input())
+a=input()
 c=0
-for element in a:
-    if element>=chr(97) and element<=chr(122):
+for i in a:
+    if i.islower():
         c+=1
 print(c)
