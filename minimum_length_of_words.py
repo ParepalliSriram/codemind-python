@@ -1,15 +1,6 @@
-a=str(input())
-c=0
-s=''
-m=0
-n=0
-for j in a:
-    m+=1
-for i in a:
-    n+=1
-    if i!=' ':
-        c+=1
-    if i==' ' or n==m:
-        s+=str(c)
-        c=0
+a=input()
+s=[]
+b=a.split()
+for i in b:
+    s.append(len(i))
 print(min(s))
