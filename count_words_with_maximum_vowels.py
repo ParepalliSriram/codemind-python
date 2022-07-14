@@ -1,12 +1,17 @@
 a=input()
 b=a.split()
-c=0
-d=[]
+c='aeiouAEIOU'
+co=0
+s=[]
 for i in b:
     for j in i:
-        if j in 'aeiouAEIOU':
-            c+=1
-    d.append(c)
-    c=0
-m=max(d)
-print(d.count(m))
+        if j in c:
+            co+=1
+    s.append(co)
+    co=0
+m=max(s)
+cou=0
+for i in s:
+    if i==m:
+        cou+=1
+print(cou)
