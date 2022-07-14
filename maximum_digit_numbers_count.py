@@ -1,6 +1,9 @@
-def rev(a):
+def cou(a):
     c=0
-    if a<0:
+    d=1
+    if a==0:
+       return d
+    elif a<0:
         a=a*(-1)
     while a:
         b=a%10
@@ -8,12 +11,17 @@ def rev(a):
         c+=1
     return c
 a=int(input())
-b=[a]
 b=list(map(int,input().split()))
-c=0
+k=[]
 for i in b:
-    if rev(i)>c:
-        c=rev(i)
+    k.append(cou(i))
+m=max(k)
+s=[]
 for i in b:
-    if rev(i)==c:
-        print(i,end=' ')
+    if cou(i)==m:
+        s.append(i)
+p=[]
+for i in s:
+    if i not in p:
+        p.append(i)
+print(*p)
