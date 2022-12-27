@@ -1,0 +1,10 @@
+s1=input()
+a=int(s1[0])
+a=a*10+(int(s1[1]))
+b=int(s1[3])
+b=b*10+(int(s1[4]))
+hrs=0.5*(a*60+b)
+mi=6*b
+an=abs(hrs-mi)
+an=min(360-an,an)
+print(an)
